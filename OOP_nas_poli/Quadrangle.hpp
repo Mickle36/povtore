@@ -14,7 +14,6 @@ public:
 	Quadrangle(int a, int b, int c, int d, int A, int B, int C, int D)
 	{
 		this->name_figure = "Четырехугольник";
-		this->sides = 4;
 		this->a = a;
 		this->b = b;
 		this->c = c;

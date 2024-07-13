@@ -133,6 +133,7 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Parallelogram.cpp" />
     <ClCompile Include="Quadrangle.cpp" />
+    <ClCompile Include="Rhomb.cpp" />
     <ClCompile Include="Right_triangle.cpp" />
     <ClCompile Include="Square.cpp" />
     <ClCompile Include="Triangle.cpp" />
@@ -143,6 +144,7 @@
     <ClInclude Include="Isosceles_triangle.hpp" />
     <ClInclude Include="Parallelogram.hpp" />
     <ClInclude Include="Quadrangle.hpp" />
+    <ClInclude Include="Rhomb.hpp" />
     <ClInclude Include="Right_triangle.hpp" />
     <ClInclude Include="Square.hpp" />
     <ClInclude Include="Triangle.hpp" />

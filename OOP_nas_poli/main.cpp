@@ -7,6 +7,7 @@
 #include "Equilateral_triangle.hpp"
 #include "Square.hpp"
 #include "Parallelogram.hpp"
+#include "Rhomb.hpp"
 
 int main()
 {
@@ -19,6 +20,7 @@ int main()
 	Equilateral_triangle equ_triangle(20);
 	Square squ(20);
 	Parallelogram parall(10, 20, 40, 60);
+	Rhomb rhomb(10, 50, 60);
 
 	
 	simple_fig.about_me();
@@ -29,5 +31,6 @@ int main()
 	equ_triangle.about_me();
 	squ.about_me();
 	parall.about_me();
+	rhomb.about_me();
 	return 0;
 }
