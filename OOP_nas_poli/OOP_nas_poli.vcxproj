@@ -131,6 +131,7 @@
     <ClCompile Include="Isosceles_triangle.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Quadrangle.cpp" />
+    <ClCompile Include="Rectangle.cpp" />
     <ClCompile Include="Right_triangle.cpp" />
     <ClCompile Include="Triangle.cpp" />
   </ItemGroup>
@@ -138,6 +139,7 @@
     <ClInclude Include="Figure.hpp" />
     <ClInclude Include="Isosceles_triangle.hpp" />
     <ClInclude Include="Quadrangle.hpp" />
+    <ClInclude Include="Rectangle.hpp" />
     <ClInclude Include="Right_triangle.hpp" />
     <ClInclude Include="Triangle.hpp" />
   </ItemGroup>
