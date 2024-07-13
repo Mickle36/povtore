@@ -130,11 +130,13 @@
     <ClCompile Include="Figure.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Quadrangle.cpp" />
+    <ClCompile Include="Right_triangle.cpp" />
     <ClCompile Include="Triangle.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Figure.hpp" />
     <ClInclude Include="Quadrangle.hpp" />
+    <ClInclude Include="Right_triangle.hpp" />
     <ClInclude Include="Triangle.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
