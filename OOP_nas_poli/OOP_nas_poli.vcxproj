@@ -131,18 +131,24 @@
     <ClCompile Include="Figure.cpp" />
     <ClCompile Include="Isosceles_triangle.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Parallelogram.cpp" />
     <ClCompile Include="Quadrangle.cpp" />
+    <ClCompile Include="Rhomb.cpp" />
     <ClCompile Include="Rectangle.cpp" />
     <ClCompile Include="Right_triangle.cpp" />
+    <ClCompile Include="Square.cpp" />
     <ClCompile Include="Triangle.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Equilateral_triangle.hpp" />
     <ClInclude Include="Figure.hpp" />
     <ClInclude Include="Isosceles_triangle.hpp" />
+    <ClInclude Include="Parallelogram.hpp" />
     <ClInclude Include="Quadrangle.hpp" />
+    <ClInclude Include="Rhomb.hpp" />
     <ClInclude Include="Rectangle.hpp" />
     <ClInclude Include="Right_triangle.hpp" />
+    <ClInclude Include="Square.hpp" />
     <ClInclude Include="Triangle.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
