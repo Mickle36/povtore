@@ -7,7 +7,6 @@ public:
 	Right_triangle(int a, int b, int c, int A, int B, int C): Triangle(a, b, c, A, B, C)
 	{
 		this->name_figure = "Прямоугольный треугольник";
-
 		this->a = a;
 		this->b = b;
 		this->c = c;

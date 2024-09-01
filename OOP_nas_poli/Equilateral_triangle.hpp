@@ -4,10 +4,15 @@
 class Equilateral_triangle : public Triangle
 {
 public:
-	Equilateral_triangle(int a)
+	Equilateral_triangle(int a, int b, int c, int A, int B, int C) : Triangle(a, b, c, A, B, C)
 	{
 		this->name_figure = "Равносторонний треугольник";
-		this->a = this->b =this->c = a;
-		this->A = this->B = this->C = 60;
+		this->a = a;
+		this->b = b;
+		this->c = c;
+		this->A = A;
+		this->B = B;
+		this->C = C;
 	}
+	bool check_fig() override;
 };
