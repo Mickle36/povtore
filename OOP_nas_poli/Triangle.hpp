@@ -14,6 +14,7 @@ public:
 	Triangle(int a, int b, int c, int A, int B, int C)
 	{
 		this->name_figure = "Треугольник";
+		this->sides = 3;
 		this->a = a;
 		this->b = b;
 		this->c = c;
@@ -22,5 +23,6 @@ public:
 		this->C = C;
 	}
 	void about_me() override;
+	bool check_fig() override;
 };
 
