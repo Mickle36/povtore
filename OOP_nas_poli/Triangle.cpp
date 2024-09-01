@@ -19,8 +19,5 @@ bool Triangle::check_fig()
 	{
 		return true;
 	}
-	else
-	{
-		return false;
-	}
+	return false;
 }
