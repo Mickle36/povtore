@@ -4,15 +4,18 @@
 class Right_triangle :public Triangle
 {
 public:
-	Right_triangle(int a, int b, int c, int A, int B)
+	Right_triangle(int a, int b, int c, int A, int B, int C): Triangle(a, b, c, A, B, C)
 	{
 		this->name_figure = "Прямоугольный треугольник";
+
 		this->a = a;
 		this->b = b;
 		this->c = c;
 		this->A = A;
 		this->B = B;
-		this->C = 90;
+		this->C = C;
 	}
+	
+	bool check_fig() override;
 };
 
