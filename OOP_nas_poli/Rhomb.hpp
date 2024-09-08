@@ -4,12 +4,18 @@
 class Rhomb : public Quadrangle
 {
 public:
-	Rhomb(int a, int A, int B)
+	Rhomb(int a, int b, int c, int d, int A, int B, int C, int D): Quadrangle(a, b, c, d, A, B, C, D)
 	{
 		this->name_figure = "Ромб";
-		this->a = this->b = this->c = this->d = a;
-		this->A = this->C = A;
-		this->B = this->D = B;
+		this->a = a;
+		this->b = b;
+		this->c = c;
+		this->d = d;
+		this->A = A;
+		this->C = C;
+		this->B = B;
+		this->D = D;
 	}
+	bool check_fig() override;
 };
 
