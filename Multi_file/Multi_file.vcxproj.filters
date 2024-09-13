@@ -21,9 +21,15 @@
     <ClCompile Include="creates_fun.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="Counter.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="creates_fun.hpp">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Counter.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>

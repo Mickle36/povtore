@@ -84,3 +84,33 @@ void calculate()
 		break;
 	}
 }
+
+void start_counter(Counter* your_class)
+{
+	std::string your_command;
+	bool stop_schet = false;
+
+	while (stop_schet==false)
+	{
+		std::cout << "Введите команду ('+', '-', '=' или 'x'): ";
+		std::cin >> your_command;
+
+		if (your_command=="+")
+		{
+			your_class->plus_count();
+		}
+		else if (your_command=="-")
+		{
+			your_class->minus_count();
+		}
+		else if (your_command=="=")
+		{
+			your_class->get_count();
+		}
+		else
+		{
+			stop_schet = your_class->end_schet(your_command);
+			std::cout << "До свидания!!!\n";
+		}
+	}
+}
