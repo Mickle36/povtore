@@ -110,7 +110,7 @@ void start_counter(Counter* your_class)
 		else
 		{
 			stop_schet = your_class->end_schet(your_command);
-			std::cout << "До свидания!!!\n";
 		}
 	}
+	std::cout << "До свидания!!!\n";
 }

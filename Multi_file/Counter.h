@@ -10,6 +10,7 @@ protected:
 public:
 	Counter()
 	{
+		loop:
 		std::cout << "Вы хотите указать начальное значение счётчика? Введите да или нет: ";
 		std::cin >> this->start_value;
 
@@ -18,9 +19,13 @@ public:
 			std::cout << "Введите начальное значение счётчика: ";
 			std::cin >> this->count;
 		}
-		else
+		else if(this->start_value == "нет")
 		{
 			this->count = 1;
+		}
+		else
+		{
+			goto loop;
 		}
 	}
 
