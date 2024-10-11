@@ -23,6 +23,6 @@ public:
 		this->C = C;
 	}
 	void about_me() override;
-	bool check_fig() override;
+	void check_fig() override;
 };
 

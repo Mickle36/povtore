@@ -2,22 +2,19 @@
 
 void Triangle::about_me()
 {
-	std::cout << this->get_name_figure() + ": "<< std::endl;
-	if (this->check_fig())
-	{
-		std::cout << "Правильная\n";
-	}
-	else { std::cout << "Неправильная\n"; }
-	std::cout << "Стороны: a=" << this->a << " b=" << this->b << " c=" << this->c << std::endl;
-	std::cout << "Углы: A=" << this->A << " B=" << this->B << " C=" << this->C << std::endl << std::endl;
+	std::cout << this->get_name_figure() + " (стороны " << this->a << ", " << this->b << ", " << this->c << "; \
+углы " << this->A << ", " << this->B << ", " << this->C << ") создан" << std::endl;
 }
 
-bool Triangle::check_fig()
+void Triangle::check_fig()
 {
 	int sum_angle = this->A + this->B + this->C;
-	if ((get_sides() == 3) && (sum_angle == 180))
+	if (get_sides() != 3)
 	{
-		return true;
+		throw bad_triangele("количесмтво сторон не равно 3");
 	}
-	return false;
+	else if (sum_angle != 180)
+	{
+		throw bad_triangele("сумма углов не равна 180");
+	}
 }

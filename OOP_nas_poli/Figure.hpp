@@ -1,6 +1,7 @@
 #pragma once
 #include <iostream>
 #include <string>
+#include "exc.h"
 
 class Figure
 {
@@ -12,5 +13,5 @@ public:
 	int get_sides();
 	std::string get_name_figure();
 	virtual void about_me();
-	virtual bool check_fig();
+	virtual void check_fig();
 };

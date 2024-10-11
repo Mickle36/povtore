@@ -16,6 +16,6 @@ public:
 		this->B = B;
 		this->D = D;
 	}
-	bool check_fig() override;
+	void check_fig() override;
 };
 

@@ -128,6 +128,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Equilateral_triangle.cpp" />
+    <ClCompile Include="exc.cpp" />
     <ClCompile Include="Figure.cpp" />
     <ClCompile Include="Isosceles_triangle.cpp" />
     <ClCompile Include="main.cpp" />
@@ -141,6 +142,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Equilateral_triangle.hpp" />
+    <ClInclude Include="exc.h" />
     <ClInclude Include="Figure.hpp" />
     <ClInclude Include="Isosceles_triangle.hpp" />
     <ClInclude Include="Parallelogram.hpp" />
