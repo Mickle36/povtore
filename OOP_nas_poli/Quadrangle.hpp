@@ -5,6 +5,7 @@ class Quadrangle : public Figure
 protected:
 	int a, b, c, d;
 	int A, B, C, D;
+	int sum_angiles;
 public:
 	Quadrangle()
 	{
@@ -23,6 +24,7 @@ public:
 		this->B = B;
 		this->C = C;
 		this->D = D;
+		this->sum_angiles = this->A + this->B + this->C + this->D;
 	}
 	void about_me() override;
 	void check_fig() override;

@@ -5,6 +5,7 @@ class Triangle : public Figure
 protected:
 	int a, b, c;
 	int A, B, C;
+	int sum_angels;
 public:
 	Triangle()
 	{
@@ -21,6 +22,7 @@ public:
 		this->A = A;
 		this->B = B;
 		this->C = C;
+		this->sum_angels = this->A + this->B + this->C;
 	}
 	void about_me() override;
 	void check_fig() override;

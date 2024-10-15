@@ -1,15 +1,8 @@
 #include "exc.h"
 
-bad_triangele::bad_triangele(const std::string& str): str(str)
-{
-}
+bad_figure::bad_figure(const std::string& message): message(message) {}
 
-const char* bad_triangele::what() const
+const char* bad_figure::what() const
 {
-    return str.c_str();
+    return message.c_str();
 }
-
-//const char* bad_rig_trian::what() const
-//{
-//    return "Ошибка создания прямоугольного треугольника. Причина: угол С не равен 90 градусам";
-//}

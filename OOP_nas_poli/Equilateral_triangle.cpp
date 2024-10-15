@@ -2,12 +2,20 @@
 
 void Equilateral_triangle::check_fig()
 {
-	/*bool truls_sides = (this->a == this->b && this->a == this->c);
-	bool truls_angels = (this->A == 60) && (this->B == 60) && (this->C == 60);
-	bool truls_with_triang = Triangle::check_fig();
-	if ((truls_sides) && (truls_angels) && truls_with_triang)
+	if ((this->a != this->b) || (this->a != this->c))
 	{
-		return true;
+		throw bad_figure("у фигуры \"" + this->get_name_figure() + "\", стороны не равны");
 	}
-    return false;*/
+	else if ((this->A != 60) || (this->B != 60) || (this->C != 60))
+	{
+		throw bad_figure("у фигуры \"" + this->get_name_figure() + "\", каждый угол не равен 60 град.");
+	}
+	else if (this->sum_angels != 180)
+	{
+		throw bad_figure("у фигуры \"" + this->get_name_figure() + "\", сумма углов не равна 180 град.");
+	}
+	else if (this->get_sides() != 3)
+	{
+		throw bad_figure("у фигуры \"" + this->get_name_figure() + "\", сумма сторон не равна 3");
+	}
 }

@@ -15,6 +15,7 @@ public:
 		this->C = C;
 		this->B = B;
 		this->D = D;
+		this->check_fig();
 	}
 	void check_fig() override;
 };

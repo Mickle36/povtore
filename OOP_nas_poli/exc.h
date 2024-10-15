@@ -2,12 +2,12 @@
 #include <iostream>
 #include <string>
 
-class bad_triangele : public std::exception
+class bad_figure : public std::exception
 {
 protected:
-    std::string str;
+    std::string message;
 public:
-    bad_triangele(const std::string& str);
+    bad_figure(const std::string& message);
     const char* what() const override;
 };
 

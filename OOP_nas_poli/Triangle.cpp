@@ -8,13 +8,12 @@ void Triangle::about_me()
 
 void Triangle::check_fig()
 {
-	int sum_angle = this->A + this->B + this->C;
 	if (get_sides() != 3)
 	{
-		throw bad_triangele("количесмтво сторон не равно 3");
+		throw bad_figure("количесмтво сторон не равно 3");
 	}
-	else if (sum_angle != 180)
+	else if (this->sum_angels != 180)
 	{
-		throw bad_triangele("сумма углов не равна 180");
+		throw bad_figure("сумма углов фигуры \"" + this->get_name_figure() +"\" не равна 180");
 	}
 }

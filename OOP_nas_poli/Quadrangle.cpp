@@ -2,23 +2,18 @@
 
 void Quadrangle::about_me()
 {
-	/*std::cout << this->get_name_figure() + ": " << std::endl;
-	if (this->check_fig())
-	{
-		std::cout << "Правильная\n";
-	}
-	else { std::cout << "Неправильная\n"; }
-	std::cout << "Стороны: a=" << this->a << " b=" << this->b << " c=" << this->c << " d=" << this->d << std::endl;
-	std::cout << "Углы: A=" << this->A << " B=" << this->B << " C=" << this->C << " D=" << this->D << std::endl << std::endl;*/
-
+	std::cout << this->get_name_figure() + " (стороны " << this->a << ", " << this->b << ", " << this->c << ", " <<
+	this->d << "; углы " << this->A << ", " << this->B << ", " << this->C << ", " << this->D << ") создан" << std::endl;
 }
 
 void Quadrangle::check_fig()
 {
-	/*int sum_angiles = this->A + this->B + this->C + this->D;
-	if ((this->sides == 4) && (sum_angiles == 360))
+	if (this->sides != 4)
 	{
-		return true;
+		throw bad_figure("количесмтво сторон не равно 4");
 	}
-	return false;*/
+	else if (sum_angiles != 360)
+	{
+		throw bad_figure("сумма углов фигуры \"" + this->get_name_figure() + "\" не равна 360");
+	}
 }

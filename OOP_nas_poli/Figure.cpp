@@ -20,6 +20,6 @@ void Figure::check_fig()
 {
 	if (this->get_sides() != 0)
 	{
-		throw bad_triangele("У фигуры не можут быть стороны");
+		throw bad_figure("У фигуры не может быть сторон");
 	};
 }

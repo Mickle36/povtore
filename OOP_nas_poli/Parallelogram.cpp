@@ -2,11 +2,22 @@
 
 void Parallelogram::check_fig()
 {
-	/*bool check_sides = (this->a == this->c) && (this->b == this->d) && (this->a != this->b) && (this->c != this->d);
-	bool check_angels = (this->A == this->C) && (this->B == this->D) && (this->A != this->B) && (this->C != this->D);
-	if (check_sides && check_angels && Quadrangle::check_fig())
+	bool true_sides = (this->a != this->c) || (this->b != this->d);
+	bool true_angels = (this->A != this->C) || (this->B != this->D);
+	if (true_sides)
 	{
-		return true;
+		throw bad_figure("у фигуры \"" + this->get_name_figure() + "\", стороны a,c и b,d попарно не равны");
 	}
-	return false;*/
+	else if (true_angels)
+	{
+		throw bad_figure("у фигуры \"" + this->get_name_figure() + "\", углы A,C и B,D попарно не равны");
+	}
+	else if (this->sides != 4)
+	{
+		throw bad_figure("количесмтво сторон не равно 4");
+	}
+	else if (sum_angiles != 360)
+	{
+		throw bad_figure("сумма углов фигуры \"" + this->get_name_figure() + "\" не равна 360");
+	}
 }
