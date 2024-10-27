@@ -1,5 +1,6 @@
 #pragma once
-#include "iostream"
+#include <iostream>
+#include <ostream>
 
 class Fraction
 {
@@ -8,6 +9,7 @@ protected:
 	int denominator_;
 	int num1;
 	int num2;
+	Fraction* side;
 public:
 	Fraction(int numerator, int denominator);
 	
@@ -19,5 +21,5 @@ public:
 	bool operator<=(Fraction other);
 	bool operator>=(Fraction other);
 	void Print(Fraction other);
-};
 
+};

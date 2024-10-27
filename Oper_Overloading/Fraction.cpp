@@ -13,6 +13,7 @@ Fraction::Fraction(int numerator, int denominator)
 
 void Fraction::transformation(Fraction other)
 {
+	this->side = &other;
 	this->num1 = this->numerator_ * other.denominator_;
 	this->num2 = this->denominator_ * other.numerator_;
 
@@ -27,7 +28,6 @@ bool Fraction::operator==(Fraction other)
 
 bool Fraction::operator!=(Fraction other)
 {
-	this->transformation(other);
 
 	return !(*this == other);
 }
@@ -41,7 +41,7 @@ bool Fraction::operator>(Fraction other)
 
 bool Fraction::operator<(Fraction other)
 {
-	return bool(other > *this);
+	return bool(!(*this > other));
 }
 
 bool Fraction::operator<=(Fraction other)
@@ -56,12 +56,10 @@ bool Fraction::operator>=(Fraction other)
 
 void Fraction::Print(Fraction other)
 {
-	this->transformation(other);
-
-	std::cout << "f1" << ((num1 == num2) ? " == " : " not == ") << "f2" << '\n';
-	std::cout << "f1" << ((num1 != num2) ? " != " : " not != ") << "f2" << '\n';
-	std::cout << "f1" << ((num1 > num2) ? " > " : " not > ") << "f2" << '\n';
-	std::cout << "f1" << ((num1 < num2) ? " < " : " not < ") << "f2" << '\n';
-	std::cout << "f1" << ((num1 <= num2) ? " <= " : " not <= ") << "f2" << '\n';
-	std::cout << "f1" << ((num1 >= num2) ? " >= " : " not >= ") << "f2" << '\n';
+	std::cout << "f1" << ((*this == other) ? " == " : " not == ") << "f2" << '\n';
+	std::cout << "f1" << ((*this != other) ? " != " : " not != ") << "f2" << '\n';
+	std::cout << "f1" << ((*this > other) ? " > " : " not > ") << "f2" << '\n';
+	std::cout << "f1" << ((*this < other) ? " < " : " not < ") << "f2" << '\n';
+	std::cout << "f1" << ((*this <= other) ? " <= " : " not <= ") << "f2" << '\n';
+	std::cout << "f1" << ((*this >= other) ? " >= " : " not >= ") << "f2" << '\n';
 }
