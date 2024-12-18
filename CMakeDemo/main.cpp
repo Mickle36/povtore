@@ -1,5 +1,5 @@
 #include <iostream>
-#include <Windows.h>
+#include "program.hpp"
 
 int main()
 {
@@ -7,10 +7,7 @@ int main()
 	SetConsoleOutputCP(1251);
 	SetConsoleCP(1251);
 
-	std::string first_name;
-	std::cout << "Введите имя: ";
-	std::cin >> first_name;
-	std::cout << "Здравствуйте, " << first_name << "!";
+	my_first_program();
 
 	return 0;
 }
