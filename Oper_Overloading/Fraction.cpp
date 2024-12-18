@@ -5,7 +5,7 @@ Fraction::Fraction(int numerator, int denominator)
 	numerator_ = numerator;
 	denominator_ = denominator;
 
-	if ((this->numerator_ == 0) || (this->denominator_ == 0))
+	if (this->denominator_ == 0)
 	{
 		throw std::invalid_argument("В дроби не должно быть нолей!!!");
 	}
@@ -186,5 +186,9 @@ void Print(Fraction f1, Fraction f2)
 
 std::ostream& operator<<(std::ostream& stream, Fraction& other)
 {
+	if (other.GetNumerator() == other.GetDenominator())
+	{
+		return stream << 1;
+	}
 	return stream << other.GetNumerator() << "/" << other.GetDenominator();
 }
